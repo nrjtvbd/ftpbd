@@ -1,7 +1,7 @@
-name: Auto Update Playlist
+name: Auto Update
 on:
   schedule:
-    - cron: '0 */3 * * *'
+    - cron: '0 */4 * * *'
   workflow_dispatch:
 
 jobs:
@@ -10,27 +10,18 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: 📦 Checkout code
-        uses: actions/checkout@v4
-
-      - name: 🐍 Setup Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-          cache: 'pip' # এটি requirements.txt এর এরর কমাবে
-
-      - name: 📥 Install Dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-
-      - name: 📡 Fetch Tokens
+      - name: Install
+        run: pip install requests cloudscraper
+      - name: Run
         run: python fetch_playlist.py
-
-      - name: 🚀 Commit & Push
+      - name: Commit
         run: |
           git config --local user.name "GitHub Action"
           git config --local user.email "action@github.com"
           git add playlist.m3u
-          git commit -m "Auto Update: $(date)" || exit 0
+          git commit -m "Auto Update" || exit 0
           git push

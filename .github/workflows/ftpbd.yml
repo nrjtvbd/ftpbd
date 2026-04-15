@@ -1,0 +1,23 @@
+name: FTPBD Auto Playlist
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # প্রতি ১ ঘণ্টায়
+  workflow_dispatch:
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v3
+      
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      
+      - run: pip install requests
+      
+      - run: python ftpbd_auto.py
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}

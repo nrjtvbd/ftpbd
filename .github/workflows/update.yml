@@ -11,20 +11,24 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
-      - setup-python: '3.10'
       
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
       - name: Install dependencies
-        run: pip install requests cloudscraper
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
       - name: Fetch Tokens
         run: python fetch_playlist.py
-        env:
-          PYTHONUNBUFFERED: 1
 
-      - name: Push to Repo
+      - name: Push Changes
         run: |
-          git config --global user.name "GitHub Action"
-          git config --global user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git config --local user.email "action@github.com"
           git add playlist.m3u
-          git commit -m "Update: $(date)" || exit 0
+          git commit -m "Auto Update: $(date)" || exit 0
           git push

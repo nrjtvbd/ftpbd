@@ -1,7 +1,7 @@
-name: Update Playlist
+name: Auto Update
 on:
   schedule:
-    - cron: '0 */2 * * *'
+    - cron: '0 */3 * * *'
   workflow_dispatch:
 
 jobs:
@@ -10,24 +10,21 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.9'
-
-      - name: Install Dependencies
+      - uses: actions/checkout@v4
+      - setup-python: '3.10'
+      
+      - name: Install dependencies
         run: pip install requests cloudscraper
 
-      - name: Run Fetcher
+      - name: Fetch Tokens
         run: python fetch_playlist.py
+        env:
+          PYTHONUNBUFFERED: 1
 
-      - name: Update Repo
+      - name: Push to Repo
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
           git add playlist.m3u
-          git commit -m "Auto Sync: $(date)" || exit 0
+          git commit -m "Update: $(date)" || exit 0
           git push

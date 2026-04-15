@@ -6,7 +6,7 @@ import os
 # --- CONFIG ---
 STREAM_BASE = "http://180.94.28.28:8097"
 GITHUB_TOKEN = os.getenv("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")
-REPO = "nrjtvbd/plusbox"
+REPO = "nrjtvbd/ftpbd"
 FILE_PATH = "ftpbd.m3u8"
 
 session = requests.Session()

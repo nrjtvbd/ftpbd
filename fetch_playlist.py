@@ -10,14 +10,16 @@ CHANNELS = [
 ]
 
 def get_token(ch_id):
+    # গিটহাব থেকে সরাসরি না পৌঁছালে আমরা টাইমআউট হ্যান্ডেল করছি
     url = f"http://180.94.28.28:8097/{ch_id}/embed.html"
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-        "Referer": "http://180.94.28.28/"
+        "Referer": "http://180.94.28.28/",
+        "X-Forwarded-For": "103.150.184.214" # বাংলাদেশি আইপি মাস্কিং ট্রাই
     }
     try:
-        # Timeout বাড়িয়ে এবং verify=False দিয়ে ট্রাই করা হচ্ছে
-        response = requests.get(url, headers=headers, timeout=25, verify=False)
+        # ২৫ সেকেন্ড সময় দেওয়া হয়েছে কানেকশন এস্টাবলিশ করার জন্য
+        response = requests.get(url, headers=headers, timeout=25)
         token_match = re.search(r'token=([a-zA-Z0-9\-_.]+)', response.text)
         if token_match:
             return token_match.group(1)
@@ -30,6 +32,7 @@ def main():
     for ch in CHANNELS:
         token = get_token(ch['id'])
         if token:
+            # মনিরুলের ফাইলের মতো remote=no_check_ip যোগ করা হয়েছে
             stream_url = f"http://180.94.28.28:8097/{ch['id']}/index.fmp4.m3u8?token={token}&remote=no_check_ip"
             entries.append(f'#EXTINF:-1 tvg-name="{ch["name"]}",{ch["name"]}\n{stream_url}')
             print(f"✅ {ch['name']} Success")

@@ -1,9 +1,1 @@
 #EXTM3U
-#EXTINF:-1 tvg-name="T Sports HD",T Sports HD
-http://180.94.28.28:8097/T-Sports/index.fmp4.m3u8
-#EXTINF:-1 tvg-name="Gazi TV HD",Gazi TV HD
-http://180.94.28.28:8097/GAZI-TV/index.fmp4.m3u8
-#EXTINF:-1 tvg-name="Somoy TV",Somoy TV
-http://180.94.28.28:8097/Somoy-TV/index.fmp4.m3u8
-#EXTINF:-1 tvg-name="Zee Bangla",Zee Bangla
-http://180.94.28.28:8097/ZEE-BANGLA/index.fmp4.m3u8

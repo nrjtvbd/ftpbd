@@ -1,26 +1,31 @@
-name: Update Playlist
+name: Auto Update Playlist
 
 on:
   schedule:
-    - cron: '0 */2 * * *' # প্রতি ২ ঘণ্টা পর পর অটো আপডেট হবে
-  workflow_dispatch: # চাইলে আপনি ম্যানুয়ালিও রান করতে পারবেন
+    - cron: '0 */2 * * *' # প্রতি ২ ঘণ্টা পর পর রান হবে
+  workflow_dispatch:
 
 jobs:
-  build:
+  update:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - name: Checkout Repository
+        uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.x'
+          python-version: '3.9'
 
-      - name: Install dependencies
-        run: pip install requests
+      - name: Install Cloudflare Warp
+        uses: fscarmen/warp-on-actions@v1.1 # আইপি ব্লকিং এড়াতে এটি অত্যন্ত জরুরি
 
-      - name: Run script
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch Latest Tokens
         run: python fetch_playlist.py
 
       - name: Commit and Push
@@ -28,5 +33,5 @@ jobs:
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
           git add playlist.m3u
-          git commit -m "Auto Update Playlist: $(date)" || exit 0
+          git commit -m "Auto Update: $(date)" || exit 0
           git push

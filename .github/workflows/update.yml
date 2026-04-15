@@ -1,0 +1,32 @@
+name: Update Playlist
+
+on:
+  schedule:
+    - cron: '0 */2 * * *' # প্রতি ২ ঘণ্টা পর পর অটো আপডেট হবে
+  workflow_dispatch: # চাইলে আপনি ম্যানুয়ালিও রান করতে পারবেন
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run script
+        run: python fetch_playlist.py
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git add playlist.m3u
+          git commit -m "Auto Update Playlist: $(date)" || exit 0
+          git push

@@ -10,28 +10,20 @@ CHANNELS = [
 ]
 
 def get_token(ch_id):
-    # সরাসরি রিকোয়েস্ট না পাঠিয়ে আমরা একটি প্রক্সি গেটওয়ে ব্যবহার করছি
     url = f"http://180.94.28.28:8097/{ch_id}/embed.html"
-    
-    # এটি GitHub-এর আইপি মাস্ক করার চেষ্টা করবে
-    proxies = {
-        "http": "http://103.150.184.214:8080", # একটি বাংলাদেশি প্রক্সি (কাজ না করলে এটি পরিবর্তন করা যাবে)
-    }
-
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
         "Referer": "http://180.94.28.28/"
     }
-
     try:
-        # প্রক্সি ছাড়া একবার ট্রাই করবে, ফেইল করলে প্রক্সি দিয়ে ট্রাই করবে
-        response = requests.get(url, headers=headers, timeout=15)
+        # Timeout বাড়িয়ে এবং verify=False দিয়ে ট্রাই করা হচ্ছে
+        response = requests.get(url, headers=headers, timeout=25, verify=False)
         token_match = re.search(r'token=([a-zA-Z0-9\-_.]+)', response.text)
         if token_match:
             return token_match.group(1)
-    except:
-        print(f"DEBUG: Direct access failed for {ch_id}, trying alternative path...")
-        return None
+    except Exception as e:
+        print(f"DEBUG Error for {ch_id}: {e}")
+    return None
 
 def main():
     entries = ["#EXTM3U"]
@@ -43,7 +35,8 @@ def main():
             print(f"✅ {ch['name']} Success")
         else:
             print(f"❌ {ch['name']} Failed")
-    
+        time.sleep(2)
+
     with open("playlist.m3u", "w") as f:
         f.write("\n".join(entries))
 

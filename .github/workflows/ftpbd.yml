@@ -16,15 +16,15 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.x'
+          python-version: '3.9'
 
-      - name: Install Chrome and Selenium
+      - name: Install Dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y google-chrome-stable
-          pip install selenium webdriver-manager requests
+          pip install selenium requests webdriver-manager
 
-      - name: Run script
+      - name: Run Sniffer
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: python ftpbd_auto.py

@@ -1,6 +1,5 @@
-import requests
-from bs4 import BeautifulSoup
 import base64
+import requests
 import os
 
 BASE_PAGE = "http://180.94.28.28/"

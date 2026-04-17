@@ -2,7 +2,7 @@ import base64
 import requests
 import os
 
-GITHUB_TOKEN = os.getenv("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")
+GITHUB_TOKEN = os.getenv("GH_TOKEN")
 REPO = "nrjtvbd/ftpbd"
 FILE_PATH = "playlist.m3u"
 

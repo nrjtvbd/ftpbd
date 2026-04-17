@@ -1,23 +1,27 @@
-name: FTPBD Auto Playlist
+name: IPTV Auto Update
 
 on:
   schedule:
-    - cron: '0 * * * *'  # প্রতি ১ ঘণ্টায়
+    - cron: '*/30 * * * *'
   workflow_dispatch:
 
 jobs:
-  run:
+  build:
     runs-on: ubuntu-latest
-    
+
     steps:
-      - uses: actions/checkout@v3
-      
-      - uses: actions/setup-python@v4
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
         with:
           python-version: '3.x'
-      
-      - run: pip install requests
-      
-      - run: python ftpbd_auto.py
+
+      - name: Install
+        run: pip install requests
+
+      - name: Run script
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: python ftpbd_auto.py

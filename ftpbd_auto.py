@@ -5,14 +5,15 @@ import json
 import requests
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 
 # GitHub Configuration
 GITHUB_TOKEN = os.getenv("GH_TOKEN")
 REPO = "nrjtvbd/ftpbd"
 FILE_PATH = "playlist.m3u"
 
-# Channel List (Apnar ftpbd.txt file onuzayi)
+# Channel List
 CHANNELS = [
     "T-Sports", "BEIN-SPORTS-USA", "STAR-SPORTS-1", "Star-Sports-2",
     "Star-Sports-Select-1", "star-Sports-Select-2", "Star-Sports-3",
@@ -24,31 +25,32 @@ CHANNELS = [
 ]
 
 def sniff_link(channel_id):
-    """Headless browser diye network traffic theke token-sho link sniff kora"""
+    """Headless browser দিয়ে নেটওয়ার্ক লগ থেকে টোকেন সংগ্রহ"""
     chrome_options = Options()
     chrome_options.add_argument("--headless")
     chrome_options.add_argument("--no-sandbox")
     chrome_options.add_argument("--disable-dev-shm-usage")
     
-    # Network logging enable kora
-    capabilities = DesiredCapabilities.CHROME
-    capabilities["goog:loggingPrefs"] = {"performance": "ALL"}
+    # নতুন নিয়মে পারফরম্যান্স লগ এনাবল করা
+    chrome_options.set_capability("goog:loggingPrefs", {"performance": "ALL"})
     
-    driver = webdriver.Chrome(options=chrome_options, desired_capabilities=capabilities)
+    # ড্রাউভার সেটআপ
+    service = Service(ChromeDriverManager().install())
+    driver = webdriver.Chrome(service=service, options=chrome_options)
+    
     url = f"http://180.94.28.28/img/play.php?stream={channel_id}"
-    
     found_url = None
+    
     try:
         driver.get(url)
-        print(f"⌛ Waiting for {channel_id} to generate token...")
-        time.sleep(12) # JS execute houar jonno somoy
+        print(f"⌛ Waiting for {channel_id} (12s)...")
+        time.sleep(12) 
         
         logs = driver.get_log("performance")
         for entry in logs:
             log = json.loads(entry["message"])["message"]
             if "Network.requestWillBeSent" in log["method"]:
                 request_url = log["params"]["request"]["url"]
-                # Link-e token ache kina check kora
                 if "index.fmp4.m3u8?token=" in request_url:
                     found_url = request_url
                     if "remote=no_check_ip" not in found_url:
@@ -59,14 +61,12 @@ def sniff_link(channel_id):
     
     driver.quit()
     
-    # Link na pawa gele backup link dewa
     if not found_url:
         found_url = f"http://180.94.28.28:8097//{channel_id}/index.fmp4.m3u8?remote=no_check_ip"
     
     return found_url
 
 def build_playlist():
-    """Playlist toiri kora"""
     m3u = "#EXTM3U\n\n"
     print("🚀 Sniffing session started...")
     
@@ -79,18 +79,14 @@ def build_playlist():
     return m3u
 
 def push_github(content):
-    """GitHub-e playlist update kora"""
     api_url = f"https://api.github.com/repos/{REPO}/contents/{FILE_PATH}"
     headers = {
         "Authorization": f"Bearer {GITHUB_TOKEN}",
         "Accept": "application/vnd.github.v3+json"
     }
 
-    # SHA check kora (File replace korar jonno dorkar)
     res = requests.get(api_url, headers=headers)
     sha = res.json().get("sha") if res.status_code == 200 else None
-
-    # Content-ke Base64 encode kora
     base64_content = base64.b64encode(content.encode("utf-8")).decode("utf-8")
 
     data = {
@@ -100,7 +96,6 @@ def push_github(content):
     if sha:
         data["sha"] = sha
 
-    # Put request pathano
     put_res = requests.put(api_url, headers=headers, json=data)
     
     if put_res.status_code in [200, 201]:
@@ -110,7 +105,7 @@ def push_github(content):
 
 if __name__ == "__main__":
     if not GITHUB_TOKEN:
-        print("❌ Error: GH_TOKEN not found in environment secrets!")
+        print("❌ Error: GH_TOKEN missing!")
     else:
         playlist_data = build_playlist()
         push_github(playlist_data)

@@ -1,0 +1,35 @@
+#EXTM3U
+
+#EXTINF:-1 group-title="Bangla",BTV
+http://180.94.28.28:8097/BTV/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",Jamuna-TV
+http://180.94.28.28:8097/Jamuna-TV/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",Maasranga-tv
+http://180.94.28.28:8097/Maasranga-tv/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",Nagorik-TV
+http://180.94.28.28:8097/Nagorik-TV/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",Somoy-TV
+http://180.94.28.28:8097/Somoy-TV/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",GAZI-TV
+http://180.94.28.28:8097/GAZI-TV/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",EKATTOR-TV
+http://180.94.28.28:8097/EKATTOR-TV/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",CHANNEL-i
+http://180.94.28.28:8097/CHANNEL-i/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",CHANNEL-24
+http://180.94.28.28:8097/CHANNEL-24/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",CHANNEL-9
+http://180.94.28.28:8097/CHANNEL-9/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",RTV
+http://180.94.28.28:8097/RTV/index.fmp4.m3u8?remote=no_check_ip
+

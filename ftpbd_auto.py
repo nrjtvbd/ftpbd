@@ -2,100 +2,50 @@ import base64
 import requests
 import os
 
-BASE_PAGE = "http://180.94.28.28/"
-
+GITHUB_TOKEN = os.getenv("GH_TOKEN")
 REPO = "nrjtvbd/ftpbd"
 FILE_PATH = "playlist.m3u"
 
-GITHUB_TOKEN = os.getenv("GH_TOKEN")
+BASE = "http://180.94.28.28:8097"
 
+CHANNELS = [
+    "BTV","Jamuna-TV","Maasranga-tv","Nagorik-TV","Somoy-TV",
+    "GAZI-TV","EKATTOR-TV","CHANNEL-i","CHANNEL-24","CHANNEL-9","RTV"
+]
 
-# ---------------------------
-# FETCH & PARSE HTML
-# ---------------------------
-def get_channels():
-    r = requests.get(BASE_PAGE, timeout=10)
-    soup = BeautifulSoup(r.text, "html.parser")
-
-    channels = []
-
-    for a in soup.find_all("a"):
-        onclick = a.get("onclick")
-        img = a.find("img")
-
-        if onclick and "stream=" in onclick:
-            try:
-                stream = onclick.split("stream=")[-1].split("'")[0]
-
-                name = img.get("alt") if img and img.get("alt") else stream
-
-                url = f"http://180.94.28.28/img/play.php?stream={stream}"
-
-                channels.append((name, url))
-            except:
-                pass
-
-    return channels
-
-
-# ---------------------------
-# BUILD M3U
-# ---------------------------
-def build_playlist(channels):
+def build_playlist():
     m3u = "#EXTM3U\n\n"
 
-    for name, url in channels:
-        m3u += f'#EXTINF:-1 group-title="Live TV",{name}\n'
+    for ch in CHANNELS:
+        url = f"{BASE}/{ch}/index.fmp4.m3u8?remote=no_check_ip"
+
+        m3u += f"#EXTINF:-1 group-title=\"Bangla\",{ch}\n"
         m3u += f"{url}\n\n"
 
     return m3u
 
-
-# ---------------------------
-# PUSH TO GITHUB
-# ---------------------------
 def push_github(content):
     api = f"https://api.github.com/repos/{REPO}/contents/{FILE_PATH}"
-
-    headers = {
-        "Authorization": f"Bearer {GITHUB_TOKEN}",
-        "Accept": "application/vnd.github+json"
-    }
+    headers = {"Authorization": f"token {GITHUB_TOKEN}"}
 
     res = requests.get(api, headers=headers)
     sha = res.json().get("sha") if res.status_code == 200 else None
 
     payload = {
-        "message": "Auto IPTV HTML Scraper Update",
+        "message": "Auto IPTV Update",
         "content": base64.b64encode(content.encode()).decode(),
+        "sha": sha
     }
 
-    if sha:
-        payload["sha"] = sha
+    requests.put(api, headers=headers, json=payload)
+    print("✅ GitHub Updated!")
 
-    r = requests.put(api, headers=headers, json=payload)
-
-    print("GitHub Status:", r.status_code)
-    print(r.json())
-
-
-# ---------------------------
-# MAIN
-# ---------------------------
 if __name__ == "__main__":
+    playlist = build_playlist()
 
-    print("Fetching channels...")
-    channels = get_channels()
-
-    print(f"Total channels found: {len(channels)}")
-
-    playlist = build_playlist(channels)
-
-    with open("playlist.m3u", "w", encoding="utf-8") as f:
+    with open("playlist.m3u", "w") as f:
         f.write(playlist)
 
-    print("💾 Local playlist created!")
+    print("💾 Local file created!")
 
     push_github(playlist)
-
-    print("✅ Done!")

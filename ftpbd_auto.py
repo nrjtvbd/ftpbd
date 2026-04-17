@@ -15,30 +15,37 @@ CHANNELS = [
 
 def build_playlist():
     m3u = "#EXTM3U\n\n"
-
     for ch in CHANNELS:
         url = f"{BASE}/{ch}/index.fmp4.m3u8?remote=no_check_ip"
-
-        m3u += f"#EXTINF:-1 group-title=\"Bangla\",{ch}\n"
-        m3u += f"{url}\n\n"
-
+        m3u += f"#EXTINF:-1 group-title=\"Bangla\",{ch}\n{url}\n\n"
     return m3u
 
 def push_github(content):
     api = f"https://api.github.com/repos/{REPO}/contents/{FILE_PATH}"
-    headers = {"Authorization": f"token {GITHUB_TOKEN}"}
+
+    headers = {
+        "Authorization": f"Bearer {GITHUB_TOKEN}",
+        "Accept": "application/vnd.github+json"
+    }
 
     res = requests.get(api, headers=headers)
-    sha = res.json().get("sha") if res.status_code == 200 else None
+
+    sha = None
+    if res.status_code == 200:
+        sha = res.json()["sha"]
 
     payload = {
         "message": "Auto IPTV Update",
         "content": base64.b64encode(content.encode()).decode(),
-        "sha": sha
     }
 
-    requests.put(api, headers=headers, json=payload)
-    print("✅ GitHub Updated!")
+    if sha:
+        payload["sha"] = sha
+
+    r = requests.put(api, headers=headers, json=payload)
+
+    print(r.status_code)
+    print(r.json())
 
 if __name__ == "__main__":
     playlist = build_playlist()
@@ -47,5 +54,4 @@ if __name__ == "__main__":
         f.write(playlist)
 
     print("💾 Local file created!")
-
     push_github(playlist)

@@ -1,5 +1,83 @@
 #EXTM3U
 
+#EXTINF:-1 group-title="Bangla",T-Sports
+http://180.94.28.28:8097/T-Sports/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",BEIN-SPORTS-USA
+http://180.94.28.28:8097/BEIN-SPORTS-USA/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",STAR-SPORTS-1
+http://180.94.28.28:8097/STAR-SPORTS-1/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",Star-Sports-2
+http://180.94.28.28:8097/Star-Sports-2/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",Star-Sports-Select-1
+http://180.94.28.28:8097/Star-Sports-Select-1/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",star-Sports-Select-2
+http://180.94.28.28:8097/star-Sports-Select-2/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",Star-Sports-3
+http://180.94.28.28:8097/Star-Sports-3/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",Sony-Ten-1
+http://180.94.28.28:8097/Sony-Ten-1/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",Sony-Ten-2
+http://180.94.28.28:8097/Sony-Ten-2/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",Sony-Ten-3
+http://180.94.28.28:8097/Sony-Ten-3/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",Sony-Ten-5
+http://180.94.28.28:8097/Sony-Ten-5/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",PTV-Sports
+http://180.94.28.28:8097/PTV-Sports/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",A-Sports
+http://180.94.28.28:8097/A-Sports/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",Ten-Sports
+http://180.94.28.28:8097/Ten-Sports/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",Ten-Cricket
+http://180.94.28.28:8097/Ten-Cricket/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",SUPERSPORT-CRICKET
+http://180.94.28.28:8097/SUPERSPORT-CRICKET/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",SKY-SPORTS-CRICKET
+http://180.94.28.28:8097/SKY-SPORTS-CRICKET/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",WILLOW-TV
+http://180.94.28.28:8097/WILLOW-TV/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",BEIN-SPORTS-ARABIC
+http://180.94.28.28:8097/BEIN-SPORTS-ARABIC/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",BEIN-SPORTS-1-ENG
+http://180.94.28.28:8097/BEIN-SPORTS-1-ENG/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",BEIN-SPORTS-1
+http://180.94.28.28:8097/BEIN-SPORTS-1/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",BEIN-SPORTS-2
+http://180.94.28.28:8097/BEIN-SPORTS-2/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",BEIN-SPORTS-3
+http://180.94.28.28:8097/BEIN-SPORTS-3/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",GEO-SUPER
+http://180.94.28.28:8097/GEO-SUPER/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",Sky-Sports-Football
+http://180.94.28.28:8097/Sky-Sports-Football/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",Sky-Sports-Premier-League
+http://180.94.28.28:8097/Sky-Sports-Premier-League/index.fmp4.m3u8?remote=no_check_ip
+
 #EXTINF:-1 group-title="Bangla",BTV
 http://180.94.28.28:8097/BTV/index.fmp4.m3u8?remote=no_check_ip
 
@@ -30,6 +108,75 @@ http://180.94.28.28:8097/CHANNEL-24/index.fmp4.m3u8?remote=no_check_ip
 #EXTINF:-1 group-title="Bangla",CHANNEL-9
 http://180.94.28.28:8097/CHANNEL-9/index.fmp4.m3u8?remote=no_check_ip
 
+#EXTINF:-1 group-title="Bangla",DEEPTO-TV
+http://180.94.28.28:8097/DEEPTO-TV/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",DBC-NEWS
+http://180.94.28.28:8097/DBC-NEWS/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",Independent-TV
+http://180.94.28.28:8097/Independent-TV/index.fmp4.m3u8?remote=no_check_ip
+
 #EXTINF:-1 group-title="Bangla",RTV
 http://180.94.28.28:8097/RTV/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",ZEE-BANGLA
+http://180.94.28.28:8097/ZEE-BANGLA/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",STAR-JALSHA
+http://180.94.28.28:8097/STAR-JALSHA/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",JALSHA-MOVIES
+http://180.94.28.28:8097/JALSHA-MOVIES/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",ENTER-10-BANGLA
+http://180.94.28.28:8097/ENTER-10-BANGLA/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",SONY-AATH
+http://180.94.28.28:8097/SONY-AATH/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",COLORS-BANGLA
+http://180.94.28.28:8097/COLORS-BANGLA/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",COLORS-BANGLA-CINEMA
+http://180.94.28.28:8097/COLORS-BANGLA-CINEMA/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",SUN-BANGLA
+http://180.94.28.28:8097/SUN-BANGLA/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",STAR-PLUS
+http://180.94.28.28:8097/STAR-PLUS/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",SONY-MAX
+http://180.94.28.28:8097/SONY-MAX/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",SONY-MAX-2
+http://180.94.28.28:8097/SONY-MAX-2/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",SONY-PIX
+http://180.94.28.28:8097/SONY-PIX/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",ZEE-CINEMA
+http://180.94.28.28:8097/ZEE-CINEMA/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",MOVIES-NOW
+http://180.94.28.28:8097/MOVIES-NOW/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",CARTOON-NETWORK
+http://180.94.28.28:8097/CARTOON-NETWORK/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",POGO
+http://180.94.28.28:8097/POGO/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",DISCOVERY-KIDS
+http://180.94.28.28:8097/DISCOVERY-KIDS/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",Duronto-TV
+http://180.94.28.28:8097/Duronto-TV/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",DISCOVERY-BANGLA
+http://180.94.28.28:8097/DISCOVERY-BANGLA/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",NAT-GEO-BANGLA
+http://180.94.28.28:8097/NAT-GEO-BANGLA/index.fmp4.m3u8?remote=no_check_ip
 

@@ -18,8 +18,11 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Install
-        run: pip install requests
+      - name: Install Chrome and Selenium
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
+          pip install selenium webdriver-manager requests
 
       - name: Run script
         env:

@@ -1,55 +1,55 @@
-import base64
-import requests
 import os
+import base64
+import time
 import json
+import requests
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
 GITHUB_TOKEN = os.getenv("GH_TOKEN")
 REPO = "nrjtvbd/ftpbd"
-CF_WORKER_URL = "https://ftpbd.drrkrana.workers.dev/?id=" # Apnar worker link
+FILE_PATH = "playlist.m3u"
 
-CHANNELS = ["T-Sports", "STAR-SPORTS-1", "Sony-Ten-1", "Jamuna-TV", "ZEE-BANGLA"] # List barate paren
+CHANNELS = ["T-Sports", "STAR-SPORTS-1", "Sony-Ten-1", "Jamuna-TV"] # Apnar baki ID gulo ekhane add korun
 
-def build_files():
+def sniff_link(channel_id):
+    chrome_options = Options()
+    chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--disable-dev-shm-usage")
+    
+    # Network logs enable kora jate link sniff kora jay
+    capabilities = DesiredCapabilities.CHROME
+    capabilities["goog:loggingPrefs"] = {"performance": "ALL"}
+    
+    driver = webdriver.Chrome(options=chrome_options, desired_capabilities=capabilities)
+    url = f"http://180.94.28.28/img/play.php?stream={channel_id}"
+    
+    try:
+        driver.get(url)
+        time.sleep(10) # Page load ebong JS run houar somoy dewa
+        
+        logs = driver.get_log("performance")
+        for entry in logs:
+            log = json.loads(entry["message"])["message"]
+            if "Network.requestWillBeSent" in log["method"]:
+                request_url = log["params"]["request"]["url"]
+                if "index.fmp4.m3u8?token=" in request_url:
+                    driver.quit()
+                    return request_url
+    except Exception as e:
+        print(f"Error sniffing {channel_id}: {e}")
+    
+    driver.quit()
+    return f"http://180.94.28.28:8097//{channel_id}/index.fmp4.m3u8?remote=no_check_ip"
+
+def build_playlist():
     m3u = "#EXTM3U\n"
-    json_data = []
-
-    print("🚀 Fetching fresh tokens via Cloudflare...")
     for ch in CHANNELS:
-        try:
-            # Cloudflare theke fresh link ana
-            res = requests.get(f"{CF_WORKER_URL}{ch}", timeout=10)
-            final_link = res.text.strip()
-            
-            # M3U Format
-            m3u += f'#EXTINF:-1 group-title="FTPBD", {ch}\n{final_link}\n'
-            
-            # JSON Format
-            json_data.append({
-                "name": ch,
-                "url": final_link,
-                "logo": f"http://180.94.28.28/assets/images/{ch}.png"
-            })
-            print(f"✅ {ch} updated.")
-        except:
-            print(f"❌ Failed: {ch}")
+        print(f"🔍 Sniffing: {ch}")
+        link = sniff_link(ch)
+        m3u += f'#EXTINF:-1, {ch}\n{link}\n'
+    return m3u
 
-    return m3u, json.dumps(json_data, indent=4)
-
-def push_to_github(filename, content):
-    api = f"https://api.github.com/repos/{REPO}/contents/{filename}"
-    headers = {"Authorization": f"Bearer {GITHUB_TOKEN}"}
-    
-    res = requests.get(api, headers=headers)
-    sha = res.json().get("sha") if res.status_code == 200 else None
-    
-    encoded = base64.b64encode(content.encode("utf-8")).decode("utf-8")
-    data = {"message": f"Update {filename}", "content": encoded}
-    if sha: data["sha"] = sha
-    
-    requests.put(api, headers=headers, json=data)
-
-if __name__ == "__main__":
-    m3u_content, json_content = build_files()
-    push_to_github("playlist.m3u", m3u_content)
-    push_to_github("playlist.json", json_content)
-    print("🎉 All files updated on GitHub!")
+# Baki push_github function-ti apnar ager motoi thakbe...

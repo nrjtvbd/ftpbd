@@ -78,7 +78,7 @@ CHANNELS = [
 def build_playlist():
     m3u = "#EXTM3U\n\n"
     for ch in CHANNELS:
-        url = f"{BASE}/{ch}/index.fmp4.m3u8?remote=no_check_ip"
+        url = f"http://180.94.28.28/img/play.php?stream={ch}"
         m3u += f"#EXTINF:-1 group-title=\"Bangla\",{ch}\n{url}\n\n"
     return m3u
 

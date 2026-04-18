@@ -21,7 +21,8 @@ jobs:
       - name: Install dependencies
         run: pip install requests aiohttp
 
-      - name: Run Script
+      - name: Decrypt and Run
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: python ftpbd_auto.py
+          CORE_PASS: ${{ secrets.CORE_PASS }} # পাসওয়ার্ড পাস করা
+        run: python decrypt.py

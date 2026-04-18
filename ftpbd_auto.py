@@ -9,13 +9,13 @@ GITHUB_TOKEN = os.getenv("GH_TOKEN")
 REPO = "nrjtvbd/ftpbd"
 FILE_PATH = "playlist.m3u"
 
-# 🔹 Sources
+# 🔹 External source
 SOURCES = [
     "https://raw.githubusercontent.com/sm-monirulislam/SM-Live-TV/main/SM+BDIX.m3u"
 ]
 
+# 🔹 Local FTPBD
 BASE = "http://180.94.28.28:8097"
-
 LOCAL_CHANNELS = [
     "BEIN-SPORTS-USA",
     "STAR-SPORTS-1",
@@ -82,40 +82,39 @@ LOCAL_CHANNELS = [
     "NAT-GEO-BANGLA"
 ]
 
-# 🔹 Category detect
-def detect_group(name):
-    name = name.lower()
+# 🔹 Clean name
+def clean_name(name):
+    return re.sub(r'#EXTINF.*?,', '', name).strip()
 
-    if any(x in name for x in ["sports","cricket","ten","bein","tsports"]):
+# 🔹 Detect group
+def detect_group(name):
+    n = name.lower()
+    if any(x in n for x in ["sports","cricket","ten","bein","tsports"]):
         return "Sports"
-    elif any(x in name for x in ["cartoon","kids","pogo"]):
+    elif any(x in n for x in ["cartoon","kids","pogo"]):
         return "Kids"
     else:
         return "Bangla"
-
-# 🔹 Clean name
-def clean_name(name):
-    name = re.sub(r'#EXTINF.*?,', '', name)
-    return name.strip()
 
 # 🔹 Parse m3u
 def parse_m3u(text):
     lines = text.splitlines()
     channels = []
-
     name = None
+
     for line in lines:
         if line.startswith("#EXTINF"):
             name = line
         elif line.startswith("http"):
             channels.append((name, line))
+
     return channels
 
-# 🔹 Async checker
+# 🔹 Async GET checker (FIXED)
 async def check_url(session, name, url):
     try:
-        async with session.head(url, timeout=5) as resp:
-            if resp.status < 400:
+        async with session.get(url, timeout=5) as resp:
+            if resp.status == 200:
                 return (name, url)
     except:
         return None
@@ -125,14 +124,14 @@ def fetch_external():
     all_channels = []
     for src in SOURCES:
         try:
-            print(f"🌐 Fetching {src}")
+            print(f"🌐 Fetching: {src}")
             res = requests.get(src, timeout=10)
             all_channels += parse_m3u(res.text)
         except:
             print("❌ Source failed")
     return all_channels
 
-# 🔹 Local build
+# 🔹 Build local
 def build_local():
     channels = []
     for ch in LOCAL_CHANNELS:
@@ -141,7 +140,7 @@ def build_local():
         channels.append((name, url))
     return channels
 
-# 🔹 Remove duplicate
+# 🔹 Remove duplicates
 def remove_duplicates(channels):
     seen = set()
     result = []
@@ -155,15 +154,21 @@ def remove_duplicates(channels):
 
     return result
 
-# 🔹 Async filter
+# 🔹 Async filter with fallback
 async def filter_channels(channels):
     async with aiohttp.ClientSession() as session:
         tasks = [check_url(session, n, u) for n, u in channels]
         results = await asyncio.gather(*tasks)
 
-    return [r for r in results if r]
+    working = [r for r in results if r]
 
-# 🔹 Build final playlist
+    if not working:
+        print("⚠️ সব filter হয়ে গেছে → fallback ব্যবহার")
+        return channels
+
+    return working
+
+# 🔹 Build playlist
 def build_playlist(channels):
     m3u = "#EXTM3U\n\n"
 
@@ -184,7 +189,7 @@ def push_github(content):
     sha = res.json().get("sha") if res.status_code == 200 else None
 
     payload = {
-        "message": "Advanced IPTV Auto Update",
+        "message": "🔥 Advanced IPTV Auto Update FIXED",
         "content": base64.b64encode(content.encode()).decode(),
         "sha": sha
     }
@@ -194,24 +199,26 @@ def push_github(content):
 
 # 🔹 MAIN
 async def main():
-    print("🚀 Advanced IPTV System Starting...")
+    print("🚀 Starting Advanced IPTV System...")
 
     external = fetch_external()
     local = build_local()
 
-    merged = local + external  # priority local first
-
+    merged = local + external
     merged = remove_duplicates(merged)
 
-    print("⚡ Checking links (async)...")
+    print(f"📊 Total merged: {len(merged)}")
+
     working = await filter_channels(merged)
+
+    print(f"✅ Final channels: {len(working)}")
 
     playlist = build_playlist(working)
 
     with open("playlist.m3u", "w") as f:
         f.write(playlist)
 
-    print("💾 Playlist Ready")
+    print("💾 Playlist saved")
 
     push_github(playlist)
 

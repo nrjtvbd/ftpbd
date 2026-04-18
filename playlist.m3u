@@ -178,182 +178,182 @@ http://180.94.28.28:8097/DISCOVERY-BANGLA/index.fmp4.m3u8?remote=no_check_ip
 http://180.94.28.28:8097/NAT-GEO-BANGLA/index.fmp4.m3u8?remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",BTV
-http://180.94.28.28:8097//BTV/index.fmp4.m3u8?token=5f942ae4423c5e78dcc7edd0d9ead903b9e956bc-0b45a7080a8761f6ed63ea05fbaf0c68-1776526322-1776522722&remote=no_check_ip
+http://180.94.28.28:8097//BTV/index.fmp4.m3u8?token=3abe3b64182a94f233e26c75d3254f8a381fb5a1-eb63c6bf7460a5a96a0ad9fd995c4492-1776527643-1776524043&remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",Jamuna Tv
-http://180.94.28.28:8097//Jamuna-TV/index.fmp4.m3u8?token=f6e16d6509ca446b91e50727f8550410773725e3-a311ecb5106141cfa35ece8b70695512-1776526322-1776522722&remote=no_check_ip
+http://180.94.28.28:8097//Jamuna-TV/index.fmp4.m3u8?token=a38925d0868f60eddc1bccd251120f9759de4067-54175908e73587e04ea1b7c44c49cf10-1776527643-1776524043&remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",MAASRANGA TV HD
-http://180.94.28.28:8097//Maasranga-tv/index.fmp4.m3u8?token=56194e510e8e8fa23f34afdcce8e8bbca91bd567-8e522bf817c4bb910f154cfc9f55b645-1776526322-1776522722&remote=no_check_ip
+http://180.94.28.28:8097//Maasranga-tv/index.fmp4.m3u8?token=1eef8728e0aae8bcb26c095a63fa11367b1e4be7-1a81d140614ec7856ab5eb77cf2fb16d-1776527644-1776524044&remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",Nagorik TV
-http://180.94.28.28:8097//Nagorik-TV/index.fmp4.m3u8?token=c6203716eaddbb9981fdf40ad8568ab67536ea84-9634fd5209616237e7b69e3e5e02ad86-1776526322-1776522722&remote=no_check_ip
+http://180.94.28.28:8097//Nagorik-TV/index.fmp4.m3u8?token=fbd76088621248f9a078ea6c9b53664eb32d0fa3-88e512d98d93deff280f2528d177233b-1776527644-1776524044&remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",Somoy TV
-http://180.94.28.28:8097//Somoy-TV/index.fmp4.m3u8?token=5acb11e654b63964bc9155fdc6ded27ef5c95eaa-1b77b5427c2656b1c9b246acbc27b44c-1776526322-1776522722&remote=no_check_ip
+http://180.94.28.28:8097//Somoy-TV/index.fmp4.m3u8?token=d44367119afeb3c791cde77809345dfb54b4101f-cf591532b01bfd97885651db3ee5768b-1776527644-1776524044&remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",Gazi TV
-http://180.94.28.28:8097//GAZI-TV/index.fmp4.m3u8?token=f5f35cb4969f95f3e02d0115c7758db1a76ebbc6-07f0d35b546e96f950b82f9b1d0069fa-1776526322-1776522722&remote=no_check_ip
+http://180.94.28.28:8097//GAZI-TV/index.fmp4.m3u8?token=cb5ad98037727b3f1a2d1b884d9642a4be2bab71-eacb1fa8fc505d26f565059e48112401-1776527644-1776524044&remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",Ekattur
-http://180.94.28.28:8097//EKATTOR-TV/index.fmp4.m3u8?token=960070e0affe63bd3a2d32a5666f26ac9dc1f257-6fed0bff1caaec4c326ab907fcd449ec-1776526322-1776522722&remote=no_check_ip
+http://180.94.28.28:8097//EKATTOR-TV/index.fmp4.m3u8?token=67f0c2d92fe63d112353cd5b4fa7b9b8fdac84e4-18429bd55c7fbd623246994899febb66-1776527644-1776524044&remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",Channel i
-http://180.94.28.28:8097//CHANNEL-i/index.fmp4.m3u8?token=25415602b9675d25344a5f8aa4b983ea079628a9-2bdeda00bb1c9e56c40b39cae6abb93b-1776526322-1776522722&remote=no_check_ip
+http://180.94.28.28:8097//CHANNEL-i/index.fmp4.m3u8?token=9ea79a75625d6c0f6e91f9df5f2b977ca9829751-762c591e6da1a7f9f080130a6f9405ba-1776527644-1776524044&remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",Channel 24
-http://180.94.28.28:8097//CHANNEL-24/index.fmp4.m3u8?token=18ccc738e7a637229beafda5523eba1a35448862-8944072f36d73cc20bfd4dba9a006a2b-1776526322-1776522722&remote=no_check_ip
+http://180.94.28.28:8097//CHANNEL-24/index.fmp4.m3u8?token=1c3e1a93621eca7a74816c8adce7d79b1b0c4036-39bf4faab24cf2f57b125e42513509d4-1776527644-1776524044&remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",Channel 9
-http://180.94.28.28:8097//CHANNEL-9/index.fmp4.m3u8?token=234caf3288d46678d61402a0bd9a3fbb9ba162ca-6b58b4a24459c3516137e415d4115537-1776526322-1776522722&remote=no_check_ip
+http://180.94.28.28:8097//CHANNEL-9/index.fmp4.m3u8?token=40f1dcffde92ec08b4c7c1f001dbcd7ee23b5c8d-88271fb250a472b73b48fd46b227d716-1776527644-1776524044&remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",Deepto  TV
-http://180.94.28.28:8097//DEEPTO-TV/index.fmp4.m3u8?token=d00ceb08fcdf82583480e00758c49c9412bcf7ca-5f9c9c3bd6408b36a42916952966c746-1776526322-1776522722&remote=no_check_ip
+http://180.94.28.28:8097//DEEPTO-TV/index.fmp4.m3u8?token=18691a2bd29df9866670fe2bd8ac08466b31d19b-a33f42fa2f0e917e8ce102c049c94371-1776527644-1776524044&remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",DBC News
-http://180.94.28.28:8097//DBC-NEWS/index.fmp4.m3u8?token=1d7e1c2c3e4fa1f9a9b0e9b4c79aa0dd80ff55c2-1227cc46e726cf48b815b563f408515c-1776526322-1776522722&remote=no_check_ip
+http://180.94.28.28:8097//DBC-NEWS/index.fmp4.m3u8?token=42746c6dc8e1a09e1cbcb807aa39e24363395c6a-d36ec5b3a45571e46d84015558c084d6-1776527644-1776524044&remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",Independent TV
-http://180.94.28.28:8097//Independent-TV/index.fmp4.m3u8?token=2ff540916e288bfbfba6fc5868ed8ebe48e70b7a-7b9a0032e44aedad4ff11e5c6d51bdbc-1776526322-1776522722&remote=no_check_ip
+http://180.94.28.28:8097//Independent-TV/index.fmp4.m3u8?token=b2d15b871ba18b594dda814f25feafe40046f042-41628d73cdaac57694603045746b7b8f-1776527644-1776524044&remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",Rtv
-http://180.94.28.28:8097//RTV/index.fmp4.m3u8?token=d6b968299a9b0886d046e5eee6234567c48e36f8-5c8214deed3b2013d1688e145622f336-1776526322-1776522722&remote=no_check_ip
+http://180.94.28.28:8097//RTV/index.fmp4.m3u8?token=aa9cf4c431213f111cbaac873538bb9c0f606d47-a03cc3a544abb2c62908d677bb9ff2c0-1776527644-1776524044&remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",Zee Bangla
-http://180.94.28.28:8097//ZEE-BANGLA/index.fmp4.m3u8?token=1fdd47d07be07f1a62a75652b29fdefb805d1f8f-0e67655065937105cf01f147229ecc83-1776526322-1776522722&remote=no_check_ip
+http://180.94.28.28:8097//ZEE-BANGLA/index.fmp4.m3u8?token=196065f75c807c90aab4bb3e4b0eba6f90e2171e-24c015cb63058e0286fd9337b52e4d06-1776527644-1776524044&remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",Star Jalsha
-http://180.94.28.28:8097//STAR-JALSHA/index.fmp4.m3u8?token=719a22f00a0e2a864bf6d056d7b2fe22de4cc999-13f85db7f1d92d3685ab688751a64c44-1776526322-1776522722&remote=no_check_ip
+http://180.94.28.28:8097//STAR-JALSHA/index.fmp4.m3u8?token=cb31226982cdc8882b84be90c46c2cc82bc581e9-aef402cd8ac64c6d32b43e8b07c6e359-1776527644-1776524044&remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",Jalsha Movies
-http://180.94.28.28:8097//JALSHA-MOVIES/index.fmp4.m3u8?token=b8c510cdbb217e3cabffcab2b80aa093869b18e8-0d408ff4189392cd44ebe587c97cde46-1776526322-1776522722&remote=no_check_ip
+http://180.94.28.28:8097//JALSHA-MOVIES/index.fmp4.m3u8?token=fd3eede849f4639637290ae995572106ce96c67b-5a7f1e826273346dc8b6b7ede68e0901-1776527644-1776524044&remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",Enter 10 Bangla
-http://180.94.28.28:8097//ENTER-10-BANGLA/index.fmp4.m3u8?token=17feada7e262386d8e8a9451d2acdd21a1018ace-1bceb4f6b9b1a458522abdc987c59c60-1776526322-1776522722&remote=no_check_ip
+http://180.94.28.28:8097//ENTER-10-BANGLA/index.fmp4.m3u8?token=61ea025d28538acb3fc9ba9785ccdbacfb008944-3727e901a319c59c287fa05df27ecd94-1776527644-1776524044&remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",Sony Aath
-http://180.94.28.28:8097//SONY-AATH/index.fmp4.m3u8?token=2e2548c2bb609fcc9b945b20f8c567d75e372a42-50e4e4c064c63ff7070e0b80eca65292-1776526324-1776522724&remote=no_check_ip
+http://180.94.28.28:8097//SONY-AATH/index.fmp4.m3u8?token=aaae9853d04d1014a5eca0c647423030055f33a8-b44f5a5dfea33a45d9d0beb6e6f7cdff-1776527645-1776524045&remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",Colors Bangla
-http://180.94.28.28:8097//COLORS-BANGLA/index.fmp4.m3u8?token=c153f856fd034acc948c60f2e12ec80290ceef19-a0bb48d5f1abe49662845a970e9f3f3b-1776526324-1776522724&remote=no_check_ip
+http://180.94.28.28:8097//COLORS-BANGLA/index.fmp4.m3u8?token=cd723553d38c63405692ff2c1c128d686d57cf7f-1a202d84eef5730eef5c32317bc6af39-1776527645-1776524045&remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",Color Bangla Cinema
-http://180.94.28.28:8097//COLORS-BANGLA-CINEMA/index.fmp4.m3u8?token=a56108be44c58300b9df4ab126c7a254d2050143-7b84072215f05b09e922dbe95dfd4592-1776526324-1776522724&remote=no_check_ip
+http://180.94.28.28:8097//COLORS-BANGLA-CINEMA/index.fmp4.m3u8?token=6aa35ef203e3cf3b07932ff2d523f6a8b5cf639f-0d11145d2cd92245042cdbcf956d47cb-1776527645-1776524045&remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",Sun Bangla
-http://180.94.28.28:8097//SUN-BANGLA/index.fmp4.m3u8?token=979656464f0470490b63e62b75c9b38e55cddaee-9ea6f8d04a0d744c75fa67f065b31625-1776526324-1776522724&remote=no_check_ip
+http://180.94.28.28:8097//SUN-BANGLA/index.fmp4.m3u8?token=f50b1d48e580079752de446642d67ec3db3bff43-2c4bb06b7684807e9392fc64ba4adc60-1776527645-1776524045&remote=no_check_ip
 
 #EXTINF:-1 group-title="Sports",T Sports
-http://180.94.28.28:8097//T-Sports/index.fmp4.m3u8?token=6a0db3a2d70e1d2b906094155b1f50804ec92690-5b9d31f88bafeedc21805e9c9e136541-1776526324-1776522724&remote=no_check_ip
+http://180.94.28.28:8097//T-Sports/index.fmp4.m3u8?token=f199edc3fa79106f5238a6edf2ccc68b21219f1a-cef55939c2cbb9139ae93f555eba370b-1776527645-1776524045&remote=no_check_ip
 
 #EXTINF:-1 group-title="Sports",Bein Sports Xtra
-http://180.94.28.28:8097//BEIN-SPORTS-USA/index.fmp4.m3u8?token=dc080b0a737fb0b2ded635fdf761e8ce44e26c31-8058c3fec3d0a7829a98433a264fd237-1776526324-1776522724&remote=no_check_ip
+http://180.94.28.28:8097//BEIN-SPORTS-USA/index.fmp4.m3u8?token=4be378014a6f23fbc91ca7d3f199aecbe4fa33ae-4104468cae31b3904da59e66d2612e4e-1776527645-1776524045&remote=no_check_ip
 
 #EXTINF:-1 group-title="Sports",Star Sports 1
-http://180.94.28.28:8097//STAR-SPORTS-1/index.fmp4.m3u8?token=f6d7aeea358b47e52097ebb5f9d7daad5a300f2d-8d88fa0264bdaacf6a43d8ec049df13e-1776526324-1776522724&remote=no_check_ip
+http://180.94.28.28:8097//STAR-SPORTS-1/index.fmp4.m3u8?token=6a16bd34c13c42bad58a3a7ac7c4349d813b9cfd-65e500b420fbcd61504c2edf3bf5abff-1776527645-1776524045&remote=no_check_ip
 
 #EXTINF:-1 group-title="Sports",Star Sports 2
-http://180.94.28.28:8097//Star-Sports-2/index.fmp4.m3u8?token=20517e42c2e45f48d2aac29e66b09e240e913f8f-a61ce8e9733114b1a57411047d809789-1776526324-1776522724&remote=no_check_ip
+http://180.94.28.28:8097//Star-Sports-2/index.fmp4.m3u8?token=c0db0055ed53a7f3a03fd28cd7276f018ec7c2e4-8b3ab040ba8d5ab063eaac24887751ef-1776527645-1776524045&remote=no_check_ip
 
 #EXTINF:-1 group-title="Sports",StarSports Select 1
-http://180.94.28.28:8097//Star-Sports-Select-1/index.fmp4.m3u8?token=b22112e3a6475e36d0dfdd9e2d3b4dbcddabd197-4b5af6ff3f2b2faa60f9ce602580bea3-1776526324-1776522724&remote=no_check_ip
+http://180.94.28.28:8097//Star-Sports-Select-1/index.fmp4.m3u8?token=48e4bb46ae09542d48f5c1ca7157bfff2217d65a-4d17d476b6465a36415edef2f1120d03-1776527645-1776524045&remote=no_check_ip
 
 #EXTINF:-1 group-title="Sports",Star Sports Select 2
-http://180.94.28.28:8097//star-Sports-Select-2/index.fmp4.m3u8?token=1bbbe6b13ebfc241c4e6a9def64f590e820137c4-2048cb331313e459f520e003b0f2b093-1776526324-1776522724&remote=no_check_ip
+http://180.94.28.28:8097//star-Sports-Select-2/index.fmp4.m3u8?token=4ae7c7f301a7c30926355765f6441d1a50393eda-dd51c00581a56f7706630e190d576bc2-1776527645-1776524045&remote=no_check_ip
 
 #EXTINF:-1 group-title="Sports",Star Sports 3
-http://180.94.28.28:8097//Star-Sports-3/index.fmp4.m3u8?token=b9f104c32bb81dd2bc938eb3572cff71fce10b2d-105d6cfe6adf251134290c3388006fbd-1776526324-1776522724&remote=no_check_ip
+http://180.94.28.28:8097//Star-Sports-3/index.fmp4.m3u8?token=e3dde477f9dc6cbe06373e33572fd4f3bd5d4064-791197b7930af58d75c6bd1694317eac-1776527645-1776524045&remote=no_check_ip
 
 #EXTINF:-1 group-title="Sports",Sony Ten 1 HD
-http://180.94.28.28:8097//Sony-Ten-1/index.fmp4.m3u8?token=7bd89f1f8c0d301f5e570f9a6fdd92a5f5017c36-47ab79dffed66087e2cfa4743667177c-1776526324-1776522724&remote=no_check_ip
+http://180.94.28.28:8097//Sony-Ten-1/index.fmp4.m3u8?token=ff47a73dae3dcc1a619710f0752942082c718cbb-d2e488a3867b89bef920e664041c30a2-1776527645-1776524045&remote=no_check_ip
 
 #EXTINF:-1 group-title="Sports",Sony Ten 2 HD
-http://180.94.28.28:8097//Sony-Ten-2/index.fmp4.m3u8?token=af967f65f52c9e41f2fbe40251de7fefc47b2ed3-369c30464663b8dcec4d4154ac32a03a-1776526324-1776522724&remote=no_check_ip
+http://180.94.28.28:8097//Sony-Ten-2/index.fmp4.m3u8?token=76aa294d9e937a8308b7800515638ae710b17260-1bdce839500ec8a73105ce7d64b8e2a9-1776527645-1776524045&remote=no_check_ip
 
 #EXTINF:-1 group-title="Sports",Sony Ten 3 HD
-http://180.94.28.28:8097//Sony-Ten-3/index.fmp4.m3u8?token=e787bb9cec3f94f749bbdce591323b091d7f5c1f-02134a0ecfdab455bfd88267cff3f0d4-1776526324-1776522724&remote=no_check_ip
+http://180.94.28.28:8097//Sony-Ten-3/index.fmp4.m3u8?token=ae2c39194c29ae511bacf45c3cfc30cde7e5eedf-c8cb871411c7ba1f52113edcd6b022b6-1776527645-1776524045&remote=no_check_ip
 
 #EXTINF:-1 group-title="Sports",Sony Ten 5 HD
-http://180.94.28.28:8097//Sony-Ten-5/index.fmp4.m3u8?token=3a2d27ede8d62cc75b461a4b17bfb25b449a5ce8-d902d77fcf178f99cc07eb6867916886-1776526324-1776522724&remote=no_check_ip
+http://180.94.28.28:8097//Sony-Ten-5/index.fmp4.m3u8?token=f710c9b4b543a55e2b00baa16b1503d30f88a184-321a556fb83924d0377076af8c755876-1776527645-1776524045&remote=no_check_ip
 
 #EXTINF:-1 group-title="Sports",PTV Sports
-http://180.94.28.28:8097//PTV-Sports/index.fmp4.m3u8?token=2048d1e835d6709d060b06e524ff3cf8154ce40d-ed9529c363e8ea85ee186b8976af0872-1776526324-1776522724&remote=no_check_ip
+http://180.94.28.28:8097//PTV-Sports/index.fmp4.m3u8?token=b9d2663e451e4d5b36f9a0bbfc39a479825aa361-43e50f1f042fb5488dc9466c35c51c72-1776527645-1776524045&remote=no_check_ip
 
 #EXTINF:-1 group-title="Sports",A Sports
-http://180.94.28.28:8097//A-Sports/index.fmp4.m3u8?token=d19060fc5130bff5b702ab686eacae74280ae4da-1c4daf44986de53d6ec0af8494a5be00-1776526324-1776522724&remote=no_check_ip
+http://180.94.28.28:8097//A-Sports/index.fmp4.m3u8?token=e227284cb3c8b69e125e21d1935f2010eb275022-555e7deeb61588f1901e2cf5cc581a07-1776527645-1776524045&remote=no_check_ip
 
 #EXTINF:-1 group-title="Sports",Ten Sports
-http://180.94.28.28:8097//Ten-Sports/index.fmp4.m3u8?token=ebc74bd677a1166388f252b1f1c906d11d535ab5-ce9c8d1e48bfd9e7b721261f1c6f9224-1776526324-1776522724&remote=no_check_ip
+http://180.94.28.28:8097//Ten-Sports/index.fmp4.m3u8?token=d63da02c4eed27330665597b9b27dfa9aa3c50a9-29e6aadafc39f989d5a54c02738ec884-1776527645-1776524045&remote=no_check_ip
 
 #EXTINF:-1 group-title="Sports",ten cricket
-http://180.94.28.28:8097//Ten-Cricket/index.fmp4.m3u8?token=2d55b0dad13887075056b0d89e88348cd535e51e-1227ce29160b8583467cf52e2f7b02e4-1776526324-1776522724&remote=no_check_ip
+http://180.94.28.28:8097//Ten-Cricket/index.fmp4.m3u8?token=f6dac214a3bbe5201a2fb830ab88e57affe3622f-5a43b5a25e45c20414d6fda28435a047-1776527645-1776524045&remote=no_check_ip
 
 #EXTINF:-1 group-title="Sports",SuperSportcricket
-http://180.94.28.28:8097//SUPERSPORT-CRICKET/index.fmp4.m3u8?token=703dcb6461952c876799699154b5ab794043d5bd-8e729f2c6d0dc27f90ef94063e8918e4-1776526324-1776522724&remote=no_check_ip
+http://180.94.28.28:8097//SUPERSPORT-CRICKET/index.fmp4.m3u8?token=edb698f4998c68d24e11cc51547d6ad009955563-e6b5237d0aedb88c2b4b98eff61d4151-1776527645-1776524045&remote=no_check_ip
 
 #EXTINF:-1 group-title="Sports",SKY-SPORTS-CRICKET
-http://180.94.28.28:8097//SKY-SPORTS-CRICKET/index.fmp4.m3u8?token=dff39b553842765736e60316e8a81913ac8508ba-f2c6ce4cfc71a10d13a4568cf0a938fe-1776526324-1776522724&remote=no_check_ip
+http://180.94.28.28:8097//SKY-SPORTS-CRICKET/index.fmp4.m3u8?token=aa5df1b162eb348391674ff144d083e2bccd2c8b-6996020798096e1842feecedb9ef230a-1776527645-1776524045&remote=no_check_ip
 
 #EXTINF:-1 group-title="Sports",WILLOW_SPORTS
-http://180.94.28.28:8097//WILLOW-TV/index.fmp4.m3u8?token=fa8489a7ec356bf73663d1fa1815498958b87ac8-5a36a7f13549c531895851b2bc357fe8-1776526324-1776522724&remote=no_check_ip
+http://180.94.28.28:8097//WILLOW-TV/index.fmp4.m3u8?token=21ca5a900643c96f1e9480de5f4671618c36b065-08b913c8bee6797a7b5a3d4d61f98375-1776527645-1776524045&remote=no_check_ip
 
 #EXTINF:-1 group-title="Sports",BEIN-SPORTS-ARABIC
-http://180.94.28.28:8097//BEIN-SPORTS-ARABIC/index.fmp4.m3u8?token=f112e5165d7bdaaf5c4399a1894e0e2d8530534f-3af101a337727b5d906e482831552d78-1776526324-1776522724&remote=no_check_ip
+http://180.94.28.28:8097//BEIN-SPORTS-ARABIC/index.fmp4.m3u8?token=c0b13c6391926ebaa5762b7de056dcd9f8b2ff75-0d3429e0985181191bd3952eac5ad7a3-1776527645-1776524045&remote=no_check_ip
 
 #EXTINF:-1 group-title="Sports",BEIN-SPORTS-1-ENG
-http://180.94.28.28:8097//BEIN-SPORTS-1-ENG/index.fmp4.m3u8?token=58847271aa7aaf9af7774ae16bf6b59969b6162d-5d1550224b777e0964cf36481467112d-1776526324-1776522724&remote=no_check_ip
+http://180.94.28.28:8097//BEIN-SPORTS-1-ENG/index.fmp4.m3u8?token=e731f120f0393d0d5e3ee4793e7df750e5458eb1-29909172c4228dfd2fe52cba94c95f0c-1776527645-1776524045&remote=no_check_ip
 
 #EXTINF:-1 group-title="Sports",BEIN-SPORTS-1
-http://180.94.28.28:8097//BEIN-SPORTS-1/index.fmp4.m3u8?token=1bfa6fd492f6c1429673e56ed6ff0ba4a61a89d8-1da2eebc0023e237ffec2a9087f835fa-1776526324-1776522724&remote=no_check_ip
+http://180.94.28.28:8097//BEIN-SPORTS-1/index.fmp4.m3u8?token=951e468259cd7f88ae922c1076dc4179ea4ff98e-98d0ef2e393d579a1b24bb3068597682-1776527645-1776524045&remote=no_check_ip
 
 #EXTINF:-1 group-title="Sports",BEIN-SPORTS-2
-http://180.94.28.28:8097//BEIN-SPORTS-2/index.fmp4.m3u8?token=d422fc4a2b41bead7bd3415a40b7224d57e4d751-6b146a81d024ce89fe0d3e0b527c0d00-1776526324-1776522724&remote=no_check_ip
+http://180.94.28.28:8097//BEIN-SPORTS-2/index.fmp4.m3u8?token=f145add7505c247ad15c6639cd1912794f658341-301b9706c5a0e593bbdf2e35a139a5c4-1776527645-1776524045&remote=no_check_ip
 
 #EXTINF:-1 group-title="Sports",BEIN-SPORTS-3
-http://180.94.28.28:8097//BEIN-SPORTS-3/index.fmp4.m3u8?token=1cae356431b8880eadb7d7b124e8a83ca096e6aa-fb8817b35dda07a60efea6e080f6c3d6-1776526324-1776522724&remote=no_check_ip
+http://180.94.28.28:8097//BEIN-SPORTS-3/index.fmp4.m3u8?token=211506e25a7c02ea6cdad3b32bcbd8973d2379aa-5d26f23f749b4d6f855daa8057de9d68-1776527645-1776524045&remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",GEO-SUPER
-http://180.94.28.28:8097//GEO-SUPER/index.fmp4.m3u8?token=8eab49048d076e03294df9f313c20cc1cdab1bce-01f8dadb2c94d455f12b20d18361b409-1776526324-1776522724&remote=no_check_ip
+http://180.94.28.28:8097//GEO-SUPER/index.fmp4.m3u8?token=8cec5231b811ca15250f128b38b35486b218c168-929106c09c0a86ac771dd76c642c950f-1776527645-1776524045&remote=no_check_ip
 
 #EXTINF:-1 group-title="Sports",ARENA-SPORTS-1
-http://180.94.28.28:8097//ARENA-SPORTS-1/index.fmp4.m3u8?token=c190a574952236c6b015f87e8ce9d22d0e63c85e-8279bf37d4ed6c64870f1325e4770b59-1776526324-1776522724&remote=no_check_ip
+http://180.94.28.28:8097//ARENA-SPORTS-1/index.fmp4.m3u8?token=804498a7db7ea29ebe48d54c593e7fbb6ecb9b67-0a09836e51f1acdb44c204dfac78380d-1776527645-1776524045&remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",DAZN-1
-http://180.94.28.28:8097//DAZN-1/index.fmp4.m3u8?token=ec5b3b9f2cc8dafe56134f81c7327b8dc618fc43-bd4b6c501c539e2ee683530d4406af2e-1776526324-1776522724&remote=no_check_ip
+http://180.94.28.28:8097//DAZN-1/index.fmp4.m3u8?token=76bec7e5a3a9b89322edeb959485d78714be80ef-e4ffa7c10fc9c09be502f01719d679b1-1776527645-1776524045&remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",Star Plus
-http://180.94.28.28:8097//STAR-PLUS/index.fmp4.m3u8?token=7ba446c7fcd56a23e19d7c94e618d73e4aacb006-35d7f65f1e3be6ad2662a835b235e44c-1776526324-1776522724&remote=no_check_ip
+http://180.94.28.28:8097//STAR-PLUS/index.fmp4.m3u8?token=754fc87bb603a56a1fa3cebce5e310d84027aabb-dd37e35a77e3f316c9e1410b08bf2349-1776527645-1776524045&remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",Sony Max HD
-http://180.94.28.28:8097//SONY-MAX/index.fmp4.m3u8?token=684a8f832811d46175d6e758bfcc0100fb692e98-9df7764ab9989b8f20fa0b562a8d6a3a-1776526325-1776522725&remote=no_check_ip
+http://180.94.28.28:8097//SONY-MAX/index.fmp4.m3u8?token=892b4c26abd6cbd8bcb946d05cbee94e7e3b41fe-b01be989f50bb7916e3167dccea97cf0-1776527645-1776524045&remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",Sony max 2
-http://180.94.28.28:8097//SONY-MAX-2/index.fmp4.m3u8?token=e5a9fe0028d1736c0c15a57dc1f2c06d87d76e8f-9190ae558a10d14cb1f61da10a22d5cb-1776526326-1776522726&remote=no_check_ip
+http://180.94.28.28:8097//SONY-MAX-2/index.fmp4.m3u8?token=ad04aac422bfc292b2bb75188c77e856a988a37c-99a7528b013f083000054c83d51f4aa0-1776527645-1776524045&remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",Sony Pix HD
-http://180.94.28.28:8097//SONY-PIX/index.fmp4.m3u8?token=9d3eb16cbe0ead0d8aad581ac61fe93ec6aec0bb-21e56069f602eb08f4b373f96308e52a-1776526326-1776522726&remote=no_check_ip
+http://180.94.28.28:8097//SONY-PIX/index.fmp4.m3u8?token=923b3a92cc5df3b3e1c2a20da43725188b6e814a-74827e162dff15639f7fad0af24263be-1776527645-1776524045&remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",Zee Cinema HD
-http://180.94.28.28:8097//ZEE-CINEMA/index.fmp4.m3u8?token=b735ac046b8d9472d2cfb3f9908f5a1a83e99890-6fad0df0b7837e38da6ff44ecc145e21-1776526326-1776522726&remote=no_check_ip
+http://180.94.28.28:8097//ZEE-CINEMA/index.fmp4.m3u8?token=78a314305e0bd42ac847dd9eeae78bf8afc0296e-5c8291403b47e7c45b3af4d97ea7e9a5-1776527645-1776524045&remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",MOVIES-NOW
-http://180.94.28.28:8097//MOVIES-NOW/index.fmp4.m3u8?token=aa1c1acd705a891502269cae334544ffa766af39-d6313567d63cd839ee26eeb86296b0ec-1776526326-1776522726&remote=no_check_ip
+http://180.94.28.28:8097//MOVIES-NOW/index.fmp4.m3u8?token=ca0ed5892d638c72ae19f5263d1722fe4b97a8ed-5100d82106de6620a64f010d36c61c5c-1776527645-1776524045&remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",CN
-http://180.94.28.28:8097//CARTOON-NETWORK/index.fmp4.m3u8?token=60e635de2d95a95b535d1599f97f1d4e12b0bd26-d1f4538abf76e05e736698d0d7fb4feb-1776526326-1776522726&remote=no_check_ip
+http://180.94.28.28:8097//CARTOON-NETWORK/index.fmp4.m3u8?token=2f8bfb514290f0d8c280f87b21973c1d378673df-39d2e75792472a59aea97b2e5161daf2-1776527645-1776524045&remote=no_check_ip
 
 #EXTINF:-1 group-title="Kids",POGO1664977122
-http://180.94.28.28:8097//POGO/index.fmp4.m3u8?token=b169af438462cd584893a16c410635b06793fc95-feb3ee1d0aff4848b5ddacbbc33d9ea7-1776526326-1776522726&remote=no_check_ip
+http://180.94.28.28:8097//POGO/index.fmp4.m3u8?token=47756cc7f2de4a2b63e17a3ac4bab48ae32c404c-2dfda301583604071eb22e68414223c0-1776527645-1776524045&remote=no_check_ip
 
 #EXTINF:-1 group-title="Kids",Discovery_kids
-http://180.94.28.28:8097//DISCOVERY-KIDS/index.fmp4.m3u8?token=64e3a09bc882aaeb51d2f2cc0437018eecf0656d-f67f8083695350e85f9fec866fa02079-1776526326-1776522726&remote=no_check_ip
+http://180.94.28.28:8097//DISCOVERY-KIDS/index.fmp4.m3u8?token=9bcd0c2f9a7efe1681add6f4f917c1e6ebbe0c18-bf5e6620aa8722bc089e275ddab92883-1776527646-1776524046&remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",Duronto-TV
-http://180.94.28.28:8097//Duronto-TV/index.fmp4.m3u8?token=f2ee32042e0cd3220e88abaa49dbe2d9643bdd44-65b6c984e3215a3c3ef0ed21d096470a-1776526326-1776522726&remote=no_check_ip
+http://180.94.28.28:8097//Duronto-TV/index.fmp4.m3u8?token=285337147dd53e7ec9c4ca55cd5b381c89a408ff-3faa2f6c47a50936145b10875cbe3e2c-1776527646-1776524046&remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",Discovery
-http://180.94.28.28:8097//DISCOVERY-BANGLA/index.fmp4.m3u8?token=07411bb08b25ef5bc9d5fd421229a22debf18bf6-ccf786a7f55f5d31dbe718e864250c2b-1776526326-1776522726&remote=no_check_ip
+http://180.94.28.28:8097//DISCOVERY-BANGLA/index.fmp4.m3u8?token=9302821a9593a6a3228b292a6ab2c2a2f04ab3d5-751bb98f6f6710c66448bb2ae439cc33-1776527646-1776524046&remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",National Geography
-http://180.94.28.28:8097//NAT-GEO-BANGLA/index.fmp4.m3u8?token=60722897da8f6801c8b5b3e47d0adaf5a91695e2-73a37e15fbc298fe3881a40b45f408ef-1776526326-1776522726&remote=no_check_ip
+http://180.94.28.28:8097//NAT-GEO-BANGLA/index.fmp4.m3u8?token=baddfc99743221df5168886d62a057db73e70322-60211cf8c82ad626ec16ab1138380d92-1776527646-1776524046&remote=no_check_ip
 

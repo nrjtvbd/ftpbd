@@ -1,111 +1,87 @@
-import os
 import base64
-import time
-import json
 import requests
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
+import os
+import re
 
-# GitHub Configuration
 GITHUB_TOKEN = os.getenv("GH_TOKEN")
 REPO = "nrjtvbd/ftpbd"
 FILE_PATH = "playlist.m3u"
 
-# Channel List
+BASE = "http://180.94.28.28:8097"
+
+# Channels
 CHANNELS = [
-    "T-Sports", "BEIN-SPORTS-USA", "STAR-SPORTS-1", "Star-Sports-2",
-    "Star-Sports-Select-1", "star-Sports-Select-2", "Star-Sports-3",
-    "Sony-Ten-1", "Sony-Ten-2", "Sony-Ten-3", "Sony-Ten-5", "PTV-Sports",
-    "A-Sports", "Ten-Sports", "Ten-Cricket", "BTV", "Jamuna-TV", 
-    "Maasranga-tv", "Nagorik-TV", "Somoy-TV", "GAZI-TV", "EKATTOR-TV", 
-    "ZEE-BANGLA", "STAR-JALSHA", "SONY-AATH", "COLORS-BANGLA", 
-    "DISCOVERY-BANGLA", "NAT-GEO-BANGLA"
+    "BTV","Jamuna-TV","Maasranga-tv","Nagorik-TV","Somoy-TV",
+    "GAZI-TV","EKATTOR-TV","CHANNEL-i","CHANNEL-24","CHANNEL-9","RTV",
+    "T-Sports"
 ]
 
-def sniff_link(channel_id):
-    """Headless browser দিয়ে নেটওয়ার্ক লগ থেকে টোকেন সংগ্রহ"""
-    chrome_options = Options()
-    chrome_options.add_argument("--headless")
-    chrome_options.add_argument("--no-sandbox")
-    chrome_options.add_argument("--disable-dev-shm-usage")
-    
-    # নতুন নিয়মে পারফরম্যান্স লগ এনাবল করা
-    chrome_options.set_capability("goog:loggingPrefs", {"performance": "ALL"})
-    
-    # ড্রাউভার সেটআপ
-    service = Service(ChromeDriverManager().install())
-    driver = webdriver.Chrome(service=service, options=chrome_options)
-    
-    url = f"http://180.94.28.28/img/play.php?stream={channel_id}"
-    found_url = None
-    
+session = requests.Session()
+
+def get_token(channel):
     try:
-        driver.get(url)
-        print(f"⌛ Waiting for {channel_id} (12s)...")
-        time.sleep(12) 
-        
-        logs = driver.get_log("performance")
-        for entry in logs:
-            log = json.loads(entry["message"])["message"]
-            if "Network.requestWillBeSent" in log["method"]:
-                request_url = log["params"]["request"]["url"]
-                if "index.fmp4.m3u8?token=" in request_url:
-                    found_url = request_url
-                    if "remote=no_check_ip" not in found_url:
-                        found_url += "&remote=no_check_ip"
-                    break
-    except Exception as e:
-        print(f"❌ Error sniffing {channel_id}: {e}")
-    
-    driver.quit()
-    
-    if not found_url:
-        found_url = f"http://180.94.28.28:8097//{channel_id}/index.fmp4.m3u8?remote=no_check_ip"
-    
-    return found_url
+        url = f"{BASE}/{channel}/embed.html"
+        res = session.get(url, timeout=5)
+
+        token = re.search(r'token=([a-zA-Z0-9\-]+)', res.text)
+        return token.group(1) if token else None
+    except:
+        return None
 
 def build_playlist():
     m3u = "#EXTM3U\n\n"
-    print("🚀 Sniffing session started...")
-    
+
     for ch in CHANNELS:
-        final_link = sniff_link(ch)
-        m3u += f'#EXTINF:-1 group-title="Auto-Update", {ch}\n'
-        m3u += f"{final_link}\n\n"
-        print(f"✅ Finished: {ch}")
-            
+        print(f"🔍 Checking {ch}...")
+
+        # 1️⃣ Try direct (no token)
+        direct_url = f"{BASE}/{ch}/index.fmp4.m3u8?remote=no_check_ip"
+
+        try:
+            r = session.get(direct_url, timeout=5)
+            if "#EXTM3U" in r.text:
+                print(f"✅ Direct OK: {ch}")
+                url = direct_url
+            else:
+                raise Exception("No playlist")
+        except:
+            print(f"⚠️ Direct failed: {ch}")
+
+            # 2️⃣ Try token
+            token = get_token(ch)
+            if token:
+                print(f"🔑 Token OK: {ch}")
+                url = f"{BASE}/{ch}/index.fmp4.m3u8?token={token}"
+            else:
+                print(f"❌ Skip: {ch}")
+                continue
+
+        m3u += f"#EXTINF:-1 group-title=\"Bangla\",{ch}\n{url}\n\n"
+
     return m3u
 
 def push_github(content):
-    api_url = f"https://api.github.com/repos/{REPO}/contents/{FILE_PATH}"
-    headers = {
-        "Authorization": f"Bearer {GITHUB_TOKEN}",
-        "Accept": "application/vnd.github.v3+json"
-    }
+    api = f"https://api.github.com/repos/{REPO}/contents/{FILE_PATH}"
+    headers = {"Authorization": f"token {GITHUB_TOKEN}"}
 
-    res = requests.get(api_url, headers=headers)
+    res = requests.get(api, headers=headers)
     sha = res.json().get("sha") if res.status_code == 200 else None
-    base64_content = base64.b64encode(content.encode("utf-8")).decode("utf-8")
 
-    data = {
-        "message": "Update playlist with auto-sniffed tokens",
-        "content": base64_content,
+    payload = {
+        "message": "Hybrid IPTV Update",
+        "content": base64.b64encode(content.encode()).decode(),
+        "sha": sha
     }
-    if sha:
-        data["sha"] = sha
 
-    put_res = requests.put(api_url, headers=headers, json=data)
-    
-    if put_res.status_code in [200, 201]:
-        print("🎉 Successfully updated playlist.m3u on GitHub!")
-    else:
-        print(f"❌ Failed to push: {put_res.text}")
+    requests.put(api, headers=headers, json=payload)
+    print("📤 GitHub Updated!")
 
 if __name__ == "__main__":
-    if not GITHUB_TOKEN:
-        print("❌ Error: GH_TOKEN missing!")
-    else:
-        playlist_data = build_playlist()
-        push_github(playlist_data)
+    playlist = build_playlist()
+
+    with open("playlist.m3u", "w") as f:
+        f.write(playlist)
+
+    print("💾 Saved locally!")
+
+    push_github(playlist)

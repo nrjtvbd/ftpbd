@@ -11,7 +11,7 @@ FILE_PATH = "playlist.m3u"
 
 # 🔹 External source
 SOURCES = [
-    "https://shorturl.at/F238T"
+    "https://raw.githubusercontent.com/sm-monirulislam/SM-Live-TV/main/SM+BDIX.m3u"
 ]
 
 # 🔹 Local FTPBD

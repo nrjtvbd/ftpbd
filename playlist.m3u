@@ -1,11 +1,86 @@
 #EXTM3U
-#EXTINF:-1 group-title="FTPBD", T-Sports
+
+#EXTINF:-1 group-title="Auto-Update", T-Sports
 http://180.94.28.28:8097//T-Sports/index.fmp4.m3u8?remote=no_check_ip
-#EXTINF:-1 group-title="FTPBD", STAR-SPORTS-1
+
+#EXTINF:-1 group-title="Auto-Update", BEIN-SPORTS-USA
+http://180.94.28.28:8097//BEIN-SPORTS-USA/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Auto-Update", STAR-SPORTS-1
 http://180.94.28.28:8097//STAR-SPORTS-1/index.fmp4.m3u8?remote=no_check_ip
-#EXTINF:-1 group-title="FTPBD", Sony-Ten-1
+
+#EXTINF:-1 group-title="Auto-Update", Star-Sports-2
+http://180.94.28.28:8097//Star-Sports-2/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Auto-Update", Star-Sports-Select-1
+http://180.94.28.28:8097//Star-Sports-Select-1/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Auto-Update", star-Sports-Select-2
+http://180.94.28.28:8097//star-Sports-Select-2/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Auto-Update", Star-Sports-3
+http://180.94.28.28:8097//Star-Sports-3/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Auto-Update", Sony-Ten-1
 http://180.94.28.28:8097//Sony-Ten-1/index.fmp4.m3u8?remote=no_check_ip
-#EXTINF:-1 group-title="FTPBD", Jamuna-TV
+
+#EXTINF:-1 group-title="Auto-Update", Sony-Ten-2
+http://180.94.28.28:8097//Sony-Ten-2/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Auto-Update", Sony-Ten-3
+http://180.94.28.28:8097//Sony-Ten-3/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Auto-Update", Sony-Ten-5
+http://180.94.28.28:8097//Sony-Ten-5/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Auto-Update", PTV-Sports
+http://180.94.28.28:8097//PTV-Sports/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Auto-Update", A-Sports
+http://180.94.28.28:8097//A-Sports/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Auto-Update", Ten-Sports
+http://180.94.28.28:8097//Ten-Sports/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Auto-Update", Ten-Cricket
+http://180.94.28.28:8097//Ten-Cricket/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Auto-Update", BTV
+http://180.94.28.28:8097//BTV/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Auto-Update", Jamuna-TV
 http://180.94.28.28:8097//Jamuna-TV/index.fmp4.m3u8?remote=no_check_ip
-#EXTINF:-1 group-title="FTPBD", ZEE-BANGLA
+
+#EXTINF:-1 group-title="Auto-Update", Maasranga-tv
+http://180.94.28.28:8097//Maasranga-tv/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Auto-Update", Nagorik-TV
+http://180.94.28.28:8097//Nagorik-TV/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Auto-Update", Somoy-TV
+http://180.94.28.28:8097//Somoy-TV/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Auto-Update", GAZI-TV
+http://180.94.28.28:8097//GAZI-TV/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Auto-Update", EKATTOR-TV
+http://180.94.28.28:8097//EKATTOR-TV/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Auto-Update", ZEE-BANGLA
 http://180.94.28.28:8097//ZEE-BANGLA/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Auto-Update", STAR-JALSHA
+http://180.94.28.28:8097//STAR-JALSHA/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Auto-Update", SONY-AATH
+http://180.94.28.28:8097//SONY-AATH/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Auto-Update", COLORS-BANGLA
+http://180.94.28.28:8097//COLORS-BANGLA/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Auto-Update", DISCOVERY-BANGLA
+http://180.94.28.28:8097//DISCOVERY-BANGLA/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Auto-Update", NAT-GEO-BANGLA
+http://180.94.28.28:8097//NAT-GEO-BANGLA/index.fmp4.m3u8?remote=no_check_ip
+

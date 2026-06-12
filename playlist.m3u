@@ -9,6 +9,36 @@ http://180.94.28.28:8097/Sony-Ten-2/index.fmp4.m3u8?remote=no_check_ip
 #EXTINF:-1 group-title="Sports",PTV-Sports
 http://180.94.28.28:8097/PTV-Sports/index.fmp4.m3u8?remote=no_check_ip
 
+#EXTINF:-1 group-title="Sports",Ten-Sports
+http://180.94.28.28:8097/Ten-Sports/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Sports",SUPERSPORT-CRICKET
+http://180.94.28.28:8097/SUPERSPORT-CRICKET/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Sports",SKY-SPORTS-CRICKET
+http://180.94.28.28:8097/SKY-SPORTS-CRICKET/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",WILLOW-TV
+http://180.94.28.28:8097/WILLOW-TV/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Sports",BEIN-SPORTS-ARABIC
+http://180.94.28.28:8097/BEIN-SPORTS-ARABIC/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Sports",BEIN-SPORTS-1-ENG
+http://180.94.28.28:8097/BEIN-SPORTS-1-ENG/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Sports",BEIN-SPORTS-1
+http://180.94.28.28:8097/BEIN-SPORTS-1/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Sports",BEIN-SPORTS-2
+http://180.94.28.28:8097/BEIN-SPORTS-2/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",GEO-SUPER
+http://180.94.28.28:8097/GEO-SUPER/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Sports",Sky-Sports-Premier-League
+http://180.94.28.28:8097/Sky-Sports-Premier-League/index.fmp4.m3u8?remote=no_check_ip
+
 #EXTINF:-1 group-title="Bangla",Jamuna-TV
 http://180.94.28.28:8097/Jamuna-TV/index.fmp4.m3u8?remote=no_check_ip
 
@@ -44,6 +74,18 @@ http://180.94.28.28:8097/SUN-BANGLA/index.fmp4.m3u8?remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",STAR-PLUS
 http://180.94.28.28:8097/STAR-PLUS/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",SONY-MAX-2
+http://180.94.28.28:8097/SONY-MAX-2/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",ZEE-CINEMA
+http://180.94.28.28:8097/ZEE-CINEMA/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Kids",CARTOON-NETWORK
+http://180.94.28.28:8097/CARTOON-NETWORK/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Kids",POGO
+http://180.94.28.28:8097/POGO/index.fmp4.m3u8?remote=no_check_ip
 
 #EXTINF:-1 group-title="Kids",DISCOVERY-KIDS
 http://180.94.28.28:8097/DISCOVERY-KIDS/index.fmp4.m3u8?remote=no_check_ip

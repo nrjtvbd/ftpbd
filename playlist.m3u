@@ -15,11 +15,8 @@ http://180.94.28.28:8097/star-Sports-Select-2/index.fmp4.m3u8?remote=no_check_ip
 #EXTINF:-1 group-title="Sports",Star-Sports-3
 http://180.94.28.28:8097/Star-Sports-3/index.fmp4.m3u8?remote=no_check_ip
 
-#EXTINF:-1 group-title="Sports",Sony-Ten-1
-http://180.94.28.28:8097/Sony-Ten-1/index.fmp4.m3u8?remote=no_check_ip
-
-#EXTINF:-1 group-title="Sports",Sony-Ten-2
-http://180.94.28.28:8097/Sony-Ten-2/index.fmp4.m3u8?remote=no_check_ip
+#EXTINF:-1 group-title="Sports",Sony-Ten-3
+http://180.94.28.28:8097/Sony-Ten-3/index.fmp4.m3u8?remote=no_check_ip
 
 #EXTINF:-1 group-title="Sports",Sony-Ten-5
 http://180.94.28.28:8097/Sony-Ten-5/index.fmp4.m3u8?remote=no_check_ip
@@ -29,36 +26,6 @@ http://180.94.28.28:8097/PTV-Sports/index.fmp4.m3u8?remote=no_check_ip
 
 #EXTINF:-1 group-title="Sports",A-Sports
 http://180.94.28.28:8097/A-Sports/index.fmp4.m3u8?remote=no_check_ip
-
-#EXTINF:-1 group-title="Sports",Ten-Sports
-http://180.94.28.28:8097/Ten-Sports/index.fmp4.m3u8?remote=no_check_ip
-
-#EXTINF:-1 group-title="Sports",Ten-Cricket
-http://180.94.28.28:8097/Ten-Cricket/index.fmp4.m3u8?remote=no_check_ip
-
-#EXTINF:-1 group-title="Sports",SKY-SPORTS-CRICKET
-http://180.94.28.28:8097/SKY-SPORTS-CRICKET/index.fmp4.m3u8?remote=no_check_ip
-
-#EXTINF:-1 group-title="Bangla",WILLOW-TV
-http://180.94.28.28:8097/WILLOW-TV/index.fmp4.m3u8?remote=no_check_ip
-
-#EXTINF:-1 group-title="Sports",BEIN-SPORTS-ARABIC
-http://180.94.28.28:8097/BEIN-SPORTS-ARABIC/index.fmp4.m3u8?remote=no_check_ip
-
-#EXTINF:-1 group-title="Sports",BEIN-SPORTS-1-ENG
-http://180.94.28.28:8097/BEIN-SPORTS-1-ENG/index.fmp4.m3u8?remote=no_check_ip
-
-#EXTINF:-1 group-title="Sports",BEIN-SPORTS-1
-http://180.94.28.28:8097/BEIN-SPORTS-1/index.fmp4.m3u8?remote=no_check_ip
-
-#EXTINF:-1 group-title="Sports",BEIN-SPORTS-2
-http://180.94.28.28:8097/BEIN-SPORTS-2/index.fmp4.m3u8?remote=no_check_ip
-
-#EXTINF:-1 group-title="Bangla",GEO-SUPER
-http://180.94.28.28:8097/GEO-SUPER/index.fmp4.m3u8?remote=no_check_ip
-
-#EXTINF:-1 group-title="Sports",Sky-Sports-Premier-League
-http://180.94.28.28:8097/Sky-Sports-Premier-League/index.fmp4.m3u8?remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",BTV
 http://180.94.28.28:8097/BTV/index.fmp4.m3u8?remote=no_check_ip
@@ -80,6 +47,9 @@ http://180.94.28.28:8097/GAZI-TV/index.fmp4.m3u8?remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",EKATTOR-TV
 http://180.94.28.28:8097/EKATTOR-TV/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",CHANNEL-i
+http://180.94.28.28:8097/CHANNEL-i/index.fmp4.m3u8?remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",CHANNEL-24
 http://180.94.28.28:8097/CHANNEL-24/index.fmp4.m3u8?remote=no_check_ip
@@ -128,12 +98,6 @@ http://180.94.28.28:8097/STAR-PLUS/index.fmp4.m3u8?remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",SONY-MAX
 http://180.94.28.28:8097/SONY-MAX/index.fmp4.m3u8?remote=no_check_ip
-
-#EXTINF:-1 group-title="Bangla",SONY-MAX-2
-http://180.94.28.28:8097/SONY-MAX-2/index.fmp4.m3u8?remote=no_check_ip
-
-#EXTINF:-1 group-title="Bangla",ZEE-CINEMA
-http://180.94.28.28:8097/ZEE-CINEMA/index.fmp4.m3u8?remote=no_check_ip
 
 #EXTINF:-1 group-title="Kids",CARTOON-NETWORK
 http://180.94.28.28:8097/CARTOON-NETWORK/index.fmp4.m3u8?remote=no_check_ip

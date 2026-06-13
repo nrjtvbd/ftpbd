@@ -99,15 +99,6 @@ http://180.94.28.28:8097/STAR-PLUS/index.fmp4.m3u8?remote=no_check_ip
 #EXTINF:-1 group-title="Bangla",SONY-MAX
 http://180.94.28.28:8097/SONY-MAX/index.fmp4.m3u8?remote=no_check_ip
 
-#EXTINF:-1 group-title="Kids",CARTOON-NETWORK
-http://180.94.28.28:8097/CARTOON-NETWORK/index.fmp4.m3u8?remote=no_check_ip
-
-#EXTINF:-1 group-title="Kids",POGO
-http://180.94.28.28:8097/POGO/index.fmp4.m3u8?remote=no_check_ip
-
-#EXTINF:-1 group-title="Kids",DISCOVERY-KIDS
-http://180.94.28.28:8097/DISCOVERY-KIDS/index.fmp4.m3u8?remote=no_check_ip
-
 #EXTINF:-1 group-title="Bangla",Duronto-TV
 http://180.94.28.28:8097/Duronto-TV/index.fmp4.m3u8?remote=no_check_ip
 

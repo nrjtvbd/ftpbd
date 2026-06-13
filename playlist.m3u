@@ -27,6 +27,9 @@ http://180.94.28.28:8097/Sony-Ten-3/index.fmp4.m3u8?remote=no_check_ip
 #EXTINF:-1 group-title="Sports",Sony-Ten-5
 http://180.94.28.28:8097/Sony-Ten-5/index.fmp4.m3u8?remote=no_check_ip
 
+#EXTINF:-1 group-title="Sports",Ten-Cricket
+http://180.94.28.28:8097/Ten-Cricket/index.fmp4.m3u8?remote=no_check_ip
+
 #EXTINF:-1 group-title="Sports",SKY-SPORTS-CRICKET
 http://180.94.28.28:8097/SKY-SPORTS-CRICKET/index.fmp4.m3u8?remote=no_check_ip
 
@@ -116,12 +119,6 @@ http://180.94.28.28:8097/COLORS-BANGLA-CINEMA/index.fmp4.m3u8?remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",SUN-BANGLA
 http://180.94.28.28:8097/SUN-BANGLA/index.fmp4.m3u8?remote=no_check_ip
-
-#EXTINF:-1 group-title="Bangla",STAR-PLUS
-http://180.94.28.28:8097/STAR-PLUS/index.fmp4.m3u8?remote=no_check_ip
-
-#EXTINF:-1 group-title="Bangla",SONY-MAX
-http://180.94.28.28:8097/SONY-MAX/index.fmp4.m3u8?remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",SONY-MAX-2
 http://180.94.28.28:8097/SONY-MAX-2/index.fmp4.m3u8?remote=no_check_ip

@@ -33,6 +33,9 @@ http://180.94.28.28:8097/PTV-Sports/index.fmp4.m3u8?remote=no_check_ip
 #EXTINF:-1 group-title="Sports",A-Sports
 http://180.94.28.28:8097/A-Sports/index.fmp4.m3u8?remote=no_check_ip
 
+#EXTINF:-1 group-title="Sports",Ten-Cricket
+http://180.94.28.28:8097/Ten-Cricket/index.fmp4.m3u8?remote=no_check_ip
+
 #EXTINF:-1 group-title="Sports",SKY-SPORTS-CRICKET
 http://180.94.28.28:8097/SKY-SPORTS-CRICKET/index.fmp4.m3u8?remote=no_check_ip
 
@@ -47,9 +50,6 @@ http://180.94.28.28:8097/BEIN-SPORTS-1-ENG/index.fmp4.m3u8?remote=no_check_ip
 
 #EXTINF:-1 group-title="Sports",BEIN-SPORTS-1
 http://180.94.28.28:8097/BEIN-SPORTS-1/index.fmp4.m3u8?remote=no_check_ip
-
-#EXTINF:-1 group-title="Sports",BEIN-SPORTS-2
-http://180.94.28.28:8097/BEIN-SPORTS-2/index.fmp4.m3u8?remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",GEO-SUPER
 http://180.94.28.28:8097/GEO-SUPER/index.fmp4.m3u8?remote=no_check_ip
@@ -66,8 +66,8 @@ http://180.94.28.28:8097/Jamuna-TV/index.fmp4.m3u8?remote=no_check_ip
 #EXTINF:-1 group-title="Bangla",Maasranga-tv
 http://180.94.28.28:8097/Maasranga-tv/index.fmp4.m3u8?remote=no_check_ip
 
-#EXTINF:-1 group-title="Bangla",Somoy-TV
-http://180.94.28.28:8097/Somoy-TV/index.fmp4.m3u8?remote=no_check_ip
+#EXTINF:-1 group-title="Bangla",Nagorik-TV
+http://180.94.28.28:8097/Nagorik-TV/index.fmp4.m3u8?remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",GAZI-TV
 http://180.94.28.28:8097/GAZI-TV/index.fmp4.m3u8?remote=no_check_ip
@@ -87,11 +87,11 @@ http://180.94.28.28:8097/CHANNEL-9/index.fmp4.m3u8?remote=no_check_ip
 #EXTINF:-1 group-title="Bangla",DEEPTO-TV
 http://180.94.28.28:8097/DEEPTO-TV/index.fmp4.m3u8?remote=no_check_ip
 
+#EXTINF:-1 group-title="Bangla",DBC-NEWS
+http://180.94.28.28:8097/DBC-NEWS/index.fmp4.m3u8?remote=no_check_ip
+
 #EXTINF:-1 group-title="Bangla",Independent-TV
 http://180.94.28.28:8097/Independent-TV/index.fmp4.m3u8?remote=no_check_ip
-
-#EXTINF:-1 group-title="Bangla",RTV
-http://180.94.28.28:8097/RTV/index.fmp4.m3u8?remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",ZEE-BANGLA
 http://180.94.28.28:8097/ZEE-BANGLA/index.fmp4.m3u8?remote=no_check_ip

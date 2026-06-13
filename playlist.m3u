@@ -21,11 +21,17 @@ http://180.94.28.28:8097/Sony-Ten-1/index.fmp4.m3u8?remote=no_check_ip
 #EXTINF:-1 group-title="Sports",Sony-Ten-2
 http://180.94.28.28:8097/Sony-Ten-2/index.fmp4.m3u8?remote=no_check_ip
 
-#EXTINF:-1 group-title="Sports",Sony-Ten-3
-http://180.94.28.28:8097/Sony-Ten-3/index.fmp4.m3u8?remote=no_check_ip
-
 #EXTINF:-1 group-title="Sports",Sony-Ten-5
 http://180.94.28.28:8097/Sony-Ten-5/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Sports",PTV-Sports
+http://180.94.28.28:8097/PTV-Sports/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Sports",A-Sports
+http://180.94.28.28:8097/A-Sports/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Sports",Ten-Sports
+http://180.94.28.28:8097/Ten-Sports/index.fmp4.m3u8?remote=no_check_ip
 
 #EXTINF:-1 group-title="Sports",Ten-Cricket
 http://180.94.28.28:8097/Ten-Cricket/index.fmp4.m3u8?remote=no_check_ip
@@ -75,9 +81,6 @@ http://180.94.28.28:8097/GAZI-TV/index.fmp4.m3u8?remote=no_check_ip
 #EXTINF:-1 group-title="Bangla",EKATTOR-TV
 http://180.94.28.28:8097/EKATTOR-TV/index.fmp4.m3u8?remote=no_check_ip
 
-#EXTINF:-1 group-title="Bangla",CHANNEL-i
-http://180.94.28.28:8097/CHANNEL-i/index.fmp4.m3u8?remote=no_check_ip
-
 #EXTINF:-1 group-title="Bangla",CHANNEL-24
 http://180.94.28.28:8097/CHANNEL-24/index.fmp4.m3u8?remote=no_check_ip
 
@@ -119,6 +122,12 @@ http://180.94.28.28:8097/COLORS-BANGLA-CINEMA/index.fmp4.m3u8?remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",SUN-BANGLA
 http://180.94.28.28:8097/SUN-BANGLA/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",STAR-PLUS
+http://180.94.28.28:8097/STAR-PLUS/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",SONY-MAX
+http://180.94.28.28:8097/SONY-MAX/index.fmp4.m3u8?remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",SONY-MAX-2
 http://180.94.28.28:8097/SONY-MAX-2/index.fmp4.m3u8?remote=no_check_ip

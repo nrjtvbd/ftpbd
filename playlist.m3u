@@ -9,8 +9,14 @@ http://180.94.28.28:8097/Star-Sports-2/index.fmp4.m3u8?remote=no_check_ip
 #EXTINF:-1 group-title="Sports",Star-Sports-Select-1
 http://180.94.28.28:8097/Star-Sports-Select-1/index.fmp4.m3u8?remote=no_check_ip
 
+#EXTINF:-1 group-title="Sports",star-Sports-Select-2
+http://180.94.28.28:8097/star-Sports-Select-2/index.fmp4.m3u8?remote=no_check_ip
+
 #EXTINF:-1 group-title="Sports",Star-Sports-3
 http://180.94.28.28:8097/Star-Sports-3/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Sports",Sony-Ten-3
+http://180.94.28.28:8097/Sony-Ten-3/index.fmp4.m3u8?remote=no_check_ip
 
 #EXTINF:-1 group-title="Sports",Sony-Ten-5
 http://180.94.28.28:8097/Sony-Ten-5/index.fmp4.m3u8?remote=no_check_ip
@@ -21,9 +27,6 @@ http://180.94.28.28:8097/PTV-Sports/index.fmp4.m3u8?remote=no_check_ip
 #EXTINF:-1 group-title="Sports",A-Sports
 http://180.94.28.28:8097/A-Sports/index.fmp4.m3u8?remote=no_check_ip
 
-#EXTINF:-1 group-title="Bangla",BTV
-http://180.94.28.28:8097/BTV/index.fmp4.m3u8?remote=no_check_ip
-
 #EXTINF:-1 group-title="Bangla",Jamuna-TV
 http://180.94.28.28:8097/Jamuna-TV/index.fmp4.m3u8?remote=no_check_ip
 
@@ -32,6 +35,9 @@ http://180.94.28.28:8097/Maasranga-tv/index.fmp4.m3u8?remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",Nagorik-TV
 http://180.94.28.28:8097/Nagorik-TV/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",Somoy-TV
+http://180.94.28.28:8097/Somoy-TV/index.fmp4.m3u8?remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",GAZI-TV
 http://180.94.28.28:8097/GAZI-TV/index.fmp4.m3u8?remote=no_check_ip
@@ -78,6 +84,9 @@ http://180.94.28.28:8097/SONY-AATH/index.fmp4.m3u8?remote=no_check_ip
 #EXTINF:-1 group-title="Bangla",COLORS-BANGLA
 http://180.94.28.28:8097/COLORS-BANGLA/index.fmp4.m3u8?remote=no_check_ip
 
+#EXTINF:-1 group-title="Bangla",COLORS-BANGLA-CINEMA
+http://180.94.28.28:8097/COLORS-BANGLA-CINEMA/index.fmp4.m3u8?remote=no_check_ip
+
 #EXTINF:-1 group-title="Bangla",SUN-BANGLA
 http://180.94.28.28:8097/SUN-BANGLA/index.fmp4.m3u8?remote=no_check_ip
 
@@ -89,4 +98,7 @@ http://180.94.28.28:8097/SONY-MAX/index.fmp4.m3u8?remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",Duronto-TV
 http://180.94.28.28:8097/Duronto-TV/index.fmp4.m3u8?remote=no_check_ip
+
+#EXTINF:-1 group-title="Bangla",NAT-GEO-BANGLA
+http://180.94.28.28:8097/NAT-GEO-BANGLA/index.fmp4.m3u8?remote=no_check_ip
 

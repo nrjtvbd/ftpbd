@@ -36,6 +36,9 @@ http://180.94.28.28:8097/SUPERSPORT-CRICKET/index.fmp4.m3u8?remote=no_check_ip
 #EXTINF:-1 group-title="Sports",SKY-SPORTS-CRICKET
 http://180.94.28.28:8097/SKY-SPORTS-CRICKET/index.fmp4.m3u8?remote=no_check_ip
 
+#EXTINF:-1 group-title="Bangla",WILLOW-TV
+http://180.94.28.28:8097/WILLOW-TV/index.fmp4.m3u8?remote=no_check_ip
+
 #EXTINF:-1 group-title="Sports",BEIN-SPORTS-ARABIC
 http://180.94.28.28:8097/BEIN-SPORTS-ARABIC/index.fmp4.m3u8?remote=no_check_ip
 
@@ -62,9 +65,6 @@ http://180.94.28.28:8097/GAZI-TV/index.fmp4.m3u8?remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",EKATTOR-TV
 http://180.94.28.28:8097/EKATTOR-TV/index.fmp4.m3u8?remote=no_check_ip
-
-#EXTINF:-1 group-title="Bangla",CHANNEL-i
-http://180.94.28.28:8097/CHANNEL-i/index.fmp4.m3u8?remote=no_check_ip
 
 #EXTINF:-1 group-title="Bangla",CHANNEL-24
 http://180.94.28.28:8097/CHANNEL-24/index.fmp4.m3u8?remote=no_check_ip

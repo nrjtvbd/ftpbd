@@ -12,6 +12,9 @@ http://180.94.28.28:8097/Somoy-TV/index.fmp4.m3u8?remote=no_check_ip
 #EXTINF:-1 group-title="Bangla",DEEPTO-TV
 http://180.94.28.28:8097/DEEPTO-TV/index.fmp4.m3u8?remote=no_check_ip
 
+#EXTINF:-1 group-title="Bangla",Independent-TV
+http://180.94.28.28:8097/Independent-TV/index.fmp4.m3u8?remote=no_check_ip
+
 #EXTINF:-1 group-title="Bangla",ZEE-BANGLA
 http://180.94.28.28:8097/ZEE-BANGLA/index.fmp4.m3u8?remote=no_check_ip
 
